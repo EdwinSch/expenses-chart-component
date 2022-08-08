@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.balanceContainer {
+    width: 500px;
+    height: 125px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+    padding: 28px;
+    color: hsl(33, 100%, 98%);
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+}
+
+.circleBlack {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.circleWhite {
+    position: relative;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border: white solid 2px;
+    border-radius: 50%;
+}
+
+.chartContainer {
+    width: 500px;
+    height: 510px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.myBalanceText {
+    font-size: 18px;
+
+}
+
+.graph {
+    /* border: solid red 1px; */
+    padding: 30px 0px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.col {
+    /* border: solid blue 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* height: 90%; */
+    width: 50px;
+    position: relative;
+}
+
+.showAmount {
+    position: absolute;
+    top: -25px;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.bar {
+    width: 100%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    transition: 0.2s ease;
+    animation-name: growBar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.bar:hover {
+    background-color: hsl(186, 34%, 60%);
+    cursor: pointer;
+}
+
+@keyframes growBar {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+
+
+.weekday {
+    color: hsl(25, 47%, 15%);
+}
+
+
+.totalContainer {
+    padding-top: 30px;
+    border-top: solid hsl(28, 10%, 53%) 1px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.text {
+    color: hsl(28, 10%, 53%);
+}
+
+h3 {
+    font-size: 38px;
+    color: hsl(25, 47%, 15%);
+}
+
+h4 {
+    font-size: 28px;
+    color: hsl(25, 47%, 15%);
+    text-align: right;
+}
