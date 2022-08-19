@@ -16,74 +16,78 @@
 </head>
 
 <body>
-  <div class="balanceContainer">
-    <div class="balance">
-      <p class="myBalanceTxt">Account balance</p>
-      <h2>&dollar;921.48</h2>
+  <main>
+    <div class="balanceContainer">
+      <div class="balance">
+        <p class="myBalanceTxt">Account balance</p>
+        <h2>&dollar;921.48</h2>
+      </div>
+      <div class="logo">
+        <div class="circleWhite"></div>
+        <div class="circleBlack"></div>
+      </div>
     </div>
-    <div class="logo">
-      <div class="circleWhite"></div>
-      <div class="circleBlack"></div>
+
+    <div class="chartContainer">
+      <h2>Spending &dash; Last 7 days</h2>
+      <!-- GRAPH START-->
+      <div class="graph">
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">mon</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">tue</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">wed</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">thu</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">fri</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">sat</p>
+        </div>
+        <div class="col">
+          <p class="showAmount"></p>
+          <div class="bar"></div>
+          <p class="weekday">sun</p>
+        </div>
+
+      </div>
+      <!-- GRAPH END -->
+      <div class="totalContainer">
+        <div class="totalThisMonth">
+          <p class="text">Total this month</p>
+          <h3>&dollar;<span>0
+            </span>
+
+          </h3>
+        </div>
+        <div class="totalLastMonth">
+          <h4>&plus;2,4&#37;</h4>
+          <p class="text">From balance</p>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <div class="chartContainer">
-    <h2>Spending &dash; Last 7 days</h2>
-    <!-- GRAPH START-->
-    <div class="graph">
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">mon</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">tue</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">wed</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">thu</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">fri</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">sat</p>
-      </div>
-      <div class="col">
-        <p class="showAmount"></p>
-        <div class="bar"></div>
-        <p class="weekday">sun</p>
-      </div>
+  </main>
 
-    </div>
-    <!-- GRAPH END -->
-    <div class="totalContainer">
-      <div class="totalThisMonth">
-        <p class="text">Total this month</p>
-        <h3>&dollar;<span>0
-          </span>
-
-        </h3>
-      </div>
-      <div class="totalLastMonth">
-        <h4>&plus;2,4&#37;</h4>
-        <p class="text">From balance</p>
-      </div>
-
-    </div>
-  </div>
 
   <script src="./script.js"></script>
 
